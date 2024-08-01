@@ -4,12 +4,19 @@ Welcome to my Personal Learning and Projects repository! Here, I document my jou
 I work with a variety of programming languages and tools, including but not limited to:
 
 Python
+
 JavaScript
+
 C#
+
 SQL
+
 HTML/CSS
+
 PHP (Laravel)
-MEAN & MERN Technologies 
+
+MEAN & MERN Technologies
+
 
 Getting Started
 Feel free to browse through the repository to explore my learning journey and projects. If you have any questions, suggestions, or just want to connect, don’t hesitate to reach out!
