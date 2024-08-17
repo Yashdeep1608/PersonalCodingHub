@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+    0% { transform: translateY(-10px); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(-10px); }
+  }
+  
+  .floating-box {
+    animation: float 4s ease-in-out infinite;
+  }
+  @keyframes nameColorChange {
+    0% {
+      color: whitesmoke;
+    }
+    50% {
+      color: rgb(213, 230, 222); /* Tailwind's emerald-400 */
+    }
+    100% {
+      color: whitesmoke;
+    }
+  }
+  
+  .name {
+    animation: nameColorChange 2s ease-in-out infinite;
+  }
+  .glow {
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+        text-shadow: 0 0 10px #8a8d4f, 0 0 20px #8a8d4f, 0 0 30px #5a6b3f, 0 0 40px #5a6b3f, 0 0 50px #5a6b3f, 0 0 60px #5a6b3f, 0 0 70px #5a6b3f;
+    }
+    
+    to {
+        text-shadow: 0 0 20px #a1bfa0, 0 0 30px #a1bfa0, 0 0 40px #6e8f68, 0 0 50px #6e8f68, 0 0 60px #6e8f68, 0 0 70px #6e8f68, 0 0 80px #6e8f68;
+    }
+
+  }
+  /* Style for the underline */
+  .nav-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255); /* Underline color */
+    transition: all 0.3s ease;
+    width: 0;
+  }
+
+  /* Container to hold the menu items */
+  .nav-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap:15px
+  }
+
+  /* Menu items */
+  .nav-item {
+    position: relative;
+    padding-bottom: 4px;
+    cursor: pointer;
+  }
